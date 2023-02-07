@@ -239,6 +239,10 @@ label a{
   border: 1px solid gray;
   margin-bottom: 1rem;
 }
+
+.content-hidden {
+  display: none;
+}
   
 
 
