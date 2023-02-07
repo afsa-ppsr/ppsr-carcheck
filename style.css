@@ -212,8 +212,15 @@ label a{
 }
 
 .accordion p {
-  font-size:xx-large;
+  font-size: xx-large;
   text-align: center;
 }
+
+.information {
+  border-radius: 0.5rem; 
+  border: 1px solid gray;
+}
+  
+
 
 
