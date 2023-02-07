@@ -211,4 +211,9 @@ label a{
  border-top-right-radius: 0.5rem;
 }
 
+.accordion p {
+  font-size:xx-large;
+  text-align: center;
+}
+
 
