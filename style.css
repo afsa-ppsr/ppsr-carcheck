@@ -212,6 +212,16 @@ label a{
  display: flex;
 }
 
+.expanded {
+  border-bottom-left-radius: 0.5rem; 
+  border-bottom-right-radius: 0.5rem;
+}
+
+.hidden {
+  border-bottom-left-radius: 0rem; 
+  border-bottom-right-radius: 0rem;
+}
+
 .header-minor h3 {
   margin: 0; 
   align-self: center;

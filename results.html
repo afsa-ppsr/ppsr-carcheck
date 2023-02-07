@@ -19,9 +19,8 @@
                 content.style.display = "none";
                 //change bottom corners to curved
                 var div = e.parentElement;
-                var radius = "0.5rem"
-                div.style.borderBottomLeftRadius = radius;
-                div.style.borderBottomRightRadius = radius;
+                div.classList.add("hidden");
+                div.classList.remove("expanded");
             } else {
                 e.getElementsByTagName("p")[0].innerHTML = "⌄";
                 e.getElementsByTagName("p")[0].style.marginTop="0rem";
@@ -29,8 +28,8 @@
                 content.style.display = "block";
                 //change bottom corners to straight
                 var div = e.parentElement;
-                div.style.borderBottomLeftRadius = 0;
-                div.style.borderBottomRightRadius = 0;
+                div.classList.remove("hidden");
+                div.classList.add("expanded");
             }
         }
     </script>
