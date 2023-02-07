@@ -9,9 +9,22 @@
     <meta name="viewport" content="initial-scale=1">
     <script type="text/javascript">
         function display_content(e){
-            e.getElementsByTagName("p")[0].innerHTML = ">";
-            var content = e.parentElement.parentElement.getElementsByClassName("content")[0];
-            content.style.display = "none";
+
+            if (e.getElementsByTagName("p")[0].innerHTML == "⌄"){
+                // change symbol
+                e.getElementsByTagName("p")[0].innerHTML = ">";
+                // hide content
+                var content = e.parentElement.parentElement.getElementsByClassName("content")[0];
+                content.style.display = "none";
+                //change bottom corners to curved
+            }
+
+            if (e.getElementsByTagName("p")[0].innerHTML == ">"){
+                e.getElementsByTagName("p")[0].innerHTML = "⌄";
+                var content = e.parentElement.parentElement.getElementsByClassName("content")[0];
+                content.style.display = "block";
+                //change bottom corners to straight
+            }
         }
     </script>
 
