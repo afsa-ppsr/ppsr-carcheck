@@ -190,3 +190,18 @@ label a{
   display:block;
   font-size:.9rem;
 }
+
+/*Results page*/
+
+.content-minor {
+  padding:1rem;
+}
+
+.accordion {
+  border-radius: 50%; 
+  border: 1px solid gray; 
+  width: 2.5rem; 
+  height: 2.5rem;
+}
+
+
