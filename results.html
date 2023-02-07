@@ -15,7 +15,7 @@
                 e.getElementsByTagName("p")[0].innerHTML = ">";
                 e.getElementsByTagName("p")[0].style.marginTop="0.5rem";
                 // hide content
-                var content = e.parentElement.parentElement.getElementsByClassName("content")[0];
+                var content = e.parentElement.parentElement.getElementsByClassName("content-minor")[0];
                 content.style.display = "none";
                 //change bottom corners to curved
                 var div = e.parentElement;
@@ -25,7 +25,7 @@
             } else {
                 e.getElementsByTagName("p")[0].innerHTML = "⌄";
                 e.getElementsByTagName("p")[0].style.marginTop="0rem";
-                var content = e.parentElement.parentElement.getElementsByClassName("content")[0];
+                var content = e.parentElement.parentElement.getElementsByClassName("content-minor")[0];
                 content.style.display = "block";
                 //change bottom corners to straight
                 var div = e.parentElement;
@@ -50,9 +50,9 @@
         <div class="content">
             <h2>Vehicle searched</h2>
             <div class="vehicle-searched" style="border-radius:0.5rem; border: 1px solid gray;">
-                <div style="background-color: blanchedalmond; padding: 1rem; border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem;">
+                <div class="header">
                     <h3>VIN: 10000000000000000</h3>
-                    <div class="accordion"></div>
+                    <div class="accordion" onclick="display_content(this);"></div>></div>
                 </div>
                 <div class="content-minor">
                     <p>
@@ -72,9 +72,9 @@
 
             <h2>Vehicle results</h2>
             <div class="free-from-debt" style="border-radius:0.5rem; border: 1px solid gray;">
-                <div style="background-color: blanchedalmond; padding: 1rem; border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem;">
+                <div class="header">
                     <h3>Free from debt</h3>
-                    <div class="accordion"></div>
+                    <div class="accordion" onclick="display_content(this);"></div>></div>
                 </div>
                 <div class="content-minor">
                     <p>There are no security interests (like a secured car loan) registered on the PPSR against the VIN of this car.</p>
@@ -85,14 +85,14 @@
             </div>
 
             <div class="stolen" style="border-radius:0.5rem; border: 1px solid gray;">
-                <div style="background-color: blanchedalmond; padding: 1rem; border-radius: 0.5rem;">
+                <div class="header">
                     <h3>Not recorded as stolen</h3>
-                    <div class="accordion"></div>
+                    <div class="accordion" onclick="display_content(this);"></div>></div>
                 </div>
             </div>
 
             <div class="free-from-debt" style="border-radius:0.5rem; border: 1px solid gray;">
-                <div style="display: flex; background-color: blanchedalmond; padding: 1rem; border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem;">
+                <div class="header">
                     <h3 style="margin: 0; align-self: center;">Vehicle safety recall recorded</h3>
                     <div class="accordion" onclick="display_content(this);"><p style="font-size:xx-large; text-align: center;">⌄</p></div>
                 </div>

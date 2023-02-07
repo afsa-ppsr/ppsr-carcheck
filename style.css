@@ -204,4 +204,11 @@ label a{
   height: 2.5rem;
 }
 
+.header {
+ background-color: blanchedalmond; 
+ padding: 1rem; 
+ border-top-left-radius: 0.5rem; 
+ border-top-right-radius: 0.5rem;
+}
+
 
