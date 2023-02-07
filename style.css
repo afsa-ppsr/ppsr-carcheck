@@ -213,13 +213,14 @@ label a{
 }
 
 .expanded {
-  border-bottom-left-radius: 0.5rem; 
-  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0rem; 
+  border-bottom-right-radius: 0rem;
+  
 }
 
 .hidden {
-  border-bottom-left-radius: 0rem; 
-  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0.5rem; 
+  border-bottom-right-radius: 0.5rem;
 }
 
 .header-minor h3 {
