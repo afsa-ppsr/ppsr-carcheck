@@ -283,12 +283,12 @@ label a{
 }
 
 .survey-option-label {
- display: "";
+ display: inline;
 }
 
 .survey-option-input {
- display: "";
- width: 15%; 
+ display: inline;
+ width: 10%; 
 }
 
 
