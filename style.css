@@ -284,11 +284,16 @@ label a{
 
 .survey-option-label {
  display: inline;
+font-weight: normal;
 }
 
 .survey-option-input {
  display: inline;
  width: 10%; 
+}
+
+strong {
+ font-weight: 500;
 }
 
 
