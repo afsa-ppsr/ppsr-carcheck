@@ -215,7 +215,7 @@ label a{
  border-bottom: 1px solid gray; 
 }
 
-.vehicle-searched .header-minor {
+.car-info .header-minor {
   background-color: #d0e0e8;
 }
 
@@ -223,7 +223,7 @@ label a{
   background-color: #f8fcec;
 }
 
-.safety-recall .header-minor {
+.safety-recall .header-minor, .written-off .header-minor {
   background-color: #fff4ec;
 }
 
@@ -263,6 +263,10 @@ label a{
 
 .icon {
   width: 3.5rem;
+}
+
+.terms {
+  font-size:xx-small;
 }
   
 
