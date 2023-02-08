@@ -200,8 +200,8 @@ label a{
 .accordion {
   border-radius: 50%; 
   border: 1px solid gray; 
-  width: 2.5rem; 
-  height: 2.5rem;
+  width: 2rem; 
+  height: 2rem;
   align-self: center;
 }
 
@@ -233,6 +233,7 @@ label a{
 .accordion p {
   font-size: xx-large;
   text-align: center;
+  line-height: 1rem;
 }
 
 .information {
