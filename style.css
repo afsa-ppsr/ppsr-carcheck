@@ -203,6 +203,7 @@ label a{
   width: 2rem; 
   height: 2rem;
   align-self: center;
+  background-color: white;
 }
 
 .header-minor {
@@ -215,6 +216,10 @@ label a{
 
 .vehicle-searched .header-minor {
   background-color: #d0e0e8;
+}
+
+.free-from-debt .header-minor {
+  background-color: #f8fcec;
 }
 
 .expanded {
