@@ -202,6 +202,7 @@ label a{
   border: 1px solid gray; 
   width: 2.5rem; 
   height: 2.5rem;
+  align-self: center;
 }
 
 .header-minor {
