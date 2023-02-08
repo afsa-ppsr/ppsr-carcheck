@@ -281,7 +281,15 @@ label a{
 .terms {
   font-size:xx-small;
 }
- 
+
+.survey-option-label {
+ display: "";
+}
+
+.survey-option-input {
+ display: "";
+ width: 15%; 
+}
 
 
 
