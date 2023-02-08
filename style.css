@@ -243,6 +243,10 @@ label a{
 .content-hidden {
   display: none;
 }
+
+.icon {
+  width: 3.5rem;
+}
   
 
 
