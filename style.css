@@ -232,7 +232,7 @@ label a{
   background-color: #d0e0e8;
 }
 
-.free-from-debt .header-minor, .stolen .header-minor {
+.free-from-debt .header-minor, .stolen .header-minor, .survey .header-minor {
   background-color: #f8fcec;
 }
 
