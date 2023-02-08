@@ -228,6 +228,8 @@ label a{
 .header-minor h3 {
   margin: 0; 
   align-self: center;
+  width: 100%;
+  text-align: center;
 }
 
 .accordion p {
