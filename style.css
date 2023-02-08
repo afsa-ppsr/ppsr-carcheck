@@ -242,7 +242,7 @@ label a{
   margin: 0; 
   align-self: center;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 .accordion p {
