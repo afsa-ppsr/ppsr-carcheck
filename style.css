@@ -212,6 +212,7 @@ label a{
  border-top-right-radius: 0.5rem;
  display: flex;
  justify-content: space-between;
+ border-bottom: 1px solid gray; 
 }
 
 .vehicle-searched .header-minor {
