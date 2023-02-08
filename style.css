@@ -206,12 +206,15 @@ label a{
 }
 
 .header-minor {
- background-color: blanchedalmond; 
  padding: 1rem; 
  border-top-left-radius: 0.5rem; 
  border-top-right-radius: 0.5rem;
  display: flex;
  justify-content: space-between;
+}
+
+.vehicle-searched div {
+  background-color: #d0e0e8;
 }
 
 .expanded {
