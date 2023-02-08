@@ -200,7 +200,7 @@ label a{
 .accordion {
   border-radius: 50%; 
   border: 1px solid gray; 
-  width: 2rem; 
+  width: 2.5rem; 
   height: 2rem;
   align-self: center;
   background-color: white;
@@ -218,8 +218,12 @@ label a{
   background-color: #d0e0e8;
 }
 
-.free-from-debt .header-minor {
+.free-from-debt .header-minor, .stolen .header-minor {
   background-color: #f8fcec;
+}
+
+.safety-recall .header-minor {
+  background-color: #fff4ec;
 }
 
 .expanded {
