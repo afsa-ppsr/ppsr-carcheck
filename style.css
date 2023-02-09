@@ -124,6 +124,7 @@ input:focus, select:focus{
   border:none;
   font-weight:bold;
   color:#fff;
+  margin-left: 0.5rem;
 }
 
 .wrapper{
