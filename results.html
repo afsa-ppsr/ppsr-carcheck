@@ -16,7 +16,8 @@
                 e.classList.add("arrow-side");
                 // hide content
                 var content = e.parentElement.parentElement.getElementsByClassName("content-minor")[0];
-                content.style.display = "none";
+                content.classList.remove("content-minor");
+                content.classList.add("content-hidden");
                 //change bottom corners to curved
                 var div = e.parentElement;
                 div.classList.add("hidden");
@@ -25,7 +26,8 @@
                 e.classList.remove("arrow-side");
                 e.classList.add("arrow-down");
                 var content = e.parentElement.parentElement.getElementsByClassName("content-hidden")[0];
-                content.style.display = "block";
+                content.classList.remove("content-hidden");
+                content.classList.add("content-minor");
                 //change bottom corners to straight
                 var div = e.parentElement;
                 div.classList.remove("hidden");
