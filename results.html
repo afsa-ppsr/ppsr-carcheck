@@ -10,10 +10,10 @@
     <script type="text/javascript">
         function display_content(e){
             debugger;
-            if (e.getElementsByTagName("p")[0].innerHTML == "⌄"){
+            if (e.classList.contains("arrow-down")){
                 // change symbol
-                e.getElementsByTagName("p")[0].innerHTML = ">";
-                e.getElementsByTagName("p")[0].style.marginTop="0.5rem";
+                e.classList.remove("arrow-down");
+                e.classList.add("arrow-side");
                 // hide content
                 var content = e.parentElement.parentElement.getElementsByClassName("content-minor")[0];
                 content.style.display = "none";
@@ -22,8 +22,8 @@
                 div.classList.add("hidden");
                 div.classList.remove("expanded");
             } else {
-                e.getElementsByTagName("p")[0].innerHTML = "⌄";
-                e.getElementsByTagName("p")[0].style.marginTop="0rem";
+                e.classList.remove("arrow-side");
+                e.classList.add("arrow-down");
                 var content = e.parentElement.parentElement.getElementsByClassName("content-minor")[0];
                 content.style.display = "block";
                 //change bottom corners to straight
