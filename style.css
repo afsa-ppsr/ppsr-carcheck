@@ -233,11 +233,11 @@ label a{
   background-color: #d0e0e8;
 }
 
-.free-from-debt .header-minor, .stolen .header-minor, .survey .header-minor {
+.free-from-debt .header-minor, .stolen .header-minor, .survey .header-minor, .written-off .header-minor {
   background-color: #f8fcec;
 }
 
-.safety-recall .header-minor, .written-off .header-minor {
+.safety-recall .header-minor {
   background-color: #fff4ec;
 }
 
