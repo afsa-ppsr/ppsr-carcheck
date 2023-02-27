@@ -307,7 +307,7 @@ section {
 
 .search-email {
   color: black;
-  font-family: "Roboto, Arial";
+  font-family: "Roboto", "Arial";
 }
 
 .bold-field {
