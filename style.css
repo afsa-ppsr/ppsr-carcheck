@@ -307,6 +307,11 @@ section {
 
 .search-email {
   color: black;
+  font-family: "Roboto, Arial";
+}
+
+.bold-field {
+  font-weight: 700;
 }
 
 
