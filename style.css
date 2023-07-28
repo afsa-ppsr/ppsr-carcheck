@@ -319,12 +319,20 @@ section {
 	background:#fe8c00;
 	margin:0;
 	color:#000;
-	padding:1rem;
+	padding:2rem 1rem;
+}
 
+#critical-notice-content{
+	max-width:60rem;
+	margin:auto;
 }
 
 #critical-notice h1, #critical-notice p{
 	color:#000;
+}
+
+#critical-notice p{
+	margin-top:.75rem;
 }
 
 #critical-notice a{
