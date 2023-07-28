@@ -49,7 +49,7 @@ table {
 
 body{
   background:#fff;
-  margin:8px;
+  margin:0px;
   font-family: -apple-system, "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color:#086474;
 }
@@ -131,6 +131,7 @@ input:focus, select:focus{
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 5px 0 rgb(0 0 0 / 19%);
     max-width: 400px;
     margin: auto;
+		margin-top:8px;
 }
 
 .header{
@@ -308,8 +309,24 @@ section {
 .search-email {
   color: black;
   font-family: "Roboto", "Arial";
-} 
+}
 
 .bold-field {
   font-weight: 700;
+}
+
+#critical-notice{
+	background:#fe8c00;
+	margin:0;
+	color:#000;
+	padding:1rem;
+
+}
+
+#critical-notice h1, #critical-notice p{
+	color:#000;
+}
+
+#critical-notice a{
+	color:#334A52;
 }
