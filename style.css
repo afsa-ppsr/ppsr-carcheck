@@ -132,6 +132,7 @@ input:focus, select:focus{
     max-width: 400px;
     margin: auto;
 		margin-top:8px;
+		position: relative;
 }
 
 .header{
@@ -338,3 +339,38 @@ section {
 #critical-notice a{
 	color:#334A52;
 }
+
+#loading{
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background:rgba(255,255,255,0.8);
+	position: absolute;
+
+}
+.loader {
+		position: absolute;
+		top: 50%;
+		left:42%;
+ 		transform: translate(0, -50%);
+		transform: translate(-50%, 0);
+
+    width: 48px;
+    height: 48px;
+    border: 5px solid #086474;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    }

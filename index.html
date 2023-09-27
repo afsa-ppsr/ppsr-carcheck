@@ -26,6 +26,15 @@
       });
 
       $( "#state" ).change(function() {
+
+        var loaderTimeout = setTimeout(){
+          $("#loading").css("display","block");
+        }
+      //  clearTimeout(this.timeoutID);
+
+
+
+
         $("#car-info").css("display","block");
       });
 
@@ -39,10 +48,13 @@
 <body>
 
   <div class="wrapper">
+
       <section class="header">
         <img src="ppsr_logo_01.svg" />
       </section>
       <section class="main">
+        <div id="loading"><span class="loader"></span></div>
+
         <div class="intro">
           <hr>
           <h1><img src="favicon.ico" alt="PPSR logo" height="18"> PPSR Car Check <span>beta</span></h1>
