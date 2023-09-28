@@ -11,8 +11,6 @@
     <script type="text/javascript">
     $(document).ready(function() {
 
-      $("#loading").css("display","none");
-
       $("#plate-search a").bind("click",function(e){
         $("#plate-search").css("display","none");
         $("#vin-search").css("display","block");
@@ -27,18 +25,9 @@
         e.preventDefaults();
       });
 
-      /*
       $( "#state" ).change(function() {
-
-        var loaderTimeout = setTimeout(){
-          $("#loading").css("display","block");
-        }
-      //  clearTimeout(this.timeoutID);
-
-
         $("#car-info").css("display","block");
       });
-      */
 
 
 
@@ -49,14 +38,23 @@
 </head>
 <body>
 
-  <div class="wrapper">
+  <div id="critical-notice">
 
+    <div id="critical-notice-content">
+
+    <h1> Important Notice - Vehicle safety recall</h1>
+
+
+     	<p>AFSA is aware of concerns around the inclusion of <strong>vehicle safety recall data</strong> on the PPSR since our update in early March.&nbsp;</p><p>We are working with our supplier to address the issues with this National Exchange of Vehicle and Driver Information System (<a href="#">NEVDIS</a>) data.</p><p>From 11:59pm AEDT on 29 March 2023 search results, search certificates and verification statements will no longer include vehicle safety recall data.</p><p>We apologise for any inconvenience.</p><p>Searches that have returned a ‘contact manufacturer’ result can be clarified with the relevant manufacturer.&nbsp;</p><p>The manufacturer will always be the most up-to-date source of information regarding vehicle safety recall information.</p>
+</div>
+
+  </div>
+
+  <div class="wrapper">
       <section class="header">
         <img src="ppsr_logo_01.svg" />
       </section>
       <section class="main">
-        <div id="loading"><span class="loader"></span></div>
-
         <div class="intro">
           <hr>
           <h1><img src="favicon.ico" alt="PPSR logo" height="18"> PPSR Car Check <span>beta</span></h1>
@@ -107,7 +105,7 @@
             <p>
                 <span>Year:</span><span> 2020</span>
             </p>
-            <p>            VIN: KMHKH81CVMUXXXXXX</p>
+            <p>            VIN: xxxxxxxxxxxxxx123</p>
             <p>
               <br>
             Your search will be performed on the VIN above.<br></p>

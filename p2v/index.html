@@ -4,7 +4,7 @@
     <title>PPSR</title>
 
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="../ppsr-src/script/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../../ppsr-src/script/jquery-3.6.1.min.js"></script>
 
     <meta name="viewport" content="initial-scale=1">
 
@@ -12,6 +12,18 @@
     $(document).ready(function() {
 
       $("#loading").css("display","none");
+
+      $(".button").bind("click",function(e){
+
+        if($(this).hasClass("disabled")){
+          return false;
+          e.preventDefaults();
+        } else {
+
+        }
+
+
+      });
 
       $("#plate-search a").bind("click",function(e){
         $("#plate-search").css("display","none");
@@ -27,18 +39,44 @@
         e.preventDefaults();
       });
 
-      /*
+
       $( "#state" ).change(function() {
 
-        var loaderTimeout = setTimeout(){
-          $("#loading").css("display","block");
-        }
-      //  clearTimeout(this.timeoutID);
+        $( "#loading" ).css("display","block");
+        $( "#loading" ).css("opacity",0);
 
 
-        $("#car-info").css("display","block");
+
+          $( "#loading" ).animate({
+            opacity: 1,
+              }, 100, function() {
+                // Animation complete.
+
+                $(this).delay(10000).queue(function() {
+
+
+                    $("#search-by-vin").html("Search for a different car");
+                    $("#plate").prop("disabled","disabled");
+                    $("#state").prop("disabled","disabled");
+
+                    $(".button.disabled").removeClass("disabled");
+
+
+                    $("#car-info").css("display","block");
+
+
+                   $( "#loading" ).fadeOut("fast");
+
+                   $(this).dequeue();
+
+                });
+
+
+          });
+
+
       });
-      */
+
 
 
 
@@ -55,7 +93,7 @@
         <img src="ppsr_logo_01.svg" />
       </section>
       <section class="main">
-        <div id="loading"><span class="loader"></span></div>
+        <div id="loading"><span class="loader-label">Loading...</span><span class="loader"></span></div>
 
         <div class="intro">
           <hr>
@@ -65,13 +103,12 @@
 
         <div class="content">
 
-          <form action="results.html" method="get">
+          <form action="payment.html" method="get">
 
           <div id="plate-search">
 
             <label for="plate">Enter number plate registration
               <input type="text" name="plate" id="plate">
-              <a href="#">Search by VIN instead</a>
 
             </label>
 
@@ -89,6 +126,7 @@
                 <option>Western Australia</option>
               </select>
             </label>
+
 
           </div>
 
@@ -119,44 +157,19 @@
 
             <label for="vin">Enter Vehicle Identification Number (VIN)
               <input type="text" name="vin" id="vin">
-              <a href="#">Search by plate number instead</a>
             </label>
 
           </div>
 
 
+          <a href="#" id="search-by-vin">Search by VIN instead</a>
+          <br><br>
 
-
-          <label for="email">Enter your email address
-            <input type="text" name="email" id="email" autocomplete="off">
-          </label>
-
-        </div>
-
-        <div class="content">
-          <h2>Pay for your $2 search</h2>
-
-          <div class="payment">
-
-            <label for="card-number">Card number
-              <input type="text" name="card-number" id="card-number">
-            </label>
-
-            <label for="expiry-date">Expiry date
-              <input type="text" name="expiry-date" id="expiry-date">
-            </label>
-
-            <label for="ccv">CCV
-              <input type="text" name="ccv" id="ccv">
-            </label>
-
-
-          </div>
 
 
         </div>
         <div class="content">
-            <input type="submit" value="Show my result" class="button">
+            <input type="submit" value="Proceed to payment" class="button disabled">
         </div>
       </form>
 
