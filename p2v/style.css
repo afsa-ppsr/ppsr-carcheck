@@ -186,11 +186,15 @@ input:focus, select:focus{
   margin-bottom: 1rem;
 }
 
-label a, #search-by-vin{
+label a, #search-by-vin, a{
   font-weight:normal;
   color:#004a6b;
   display:block;
   font-size:.9rem;
+}
+
+p a{
+	display:inline;
 }
 
 /*Results page*/
@@ -349,6 +353,17 @@ section {
 
 }
 
+.expiry-date{
+	width:20%;
+	display:inline;
+}
+
+label span{
+	font-weight:normal;
+	font-size:.8rem;
+	padding-top:.3rem;
+	display:block;
+}
 
 .loader-label{
 	position: absolute;

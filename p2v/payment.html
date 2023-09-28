@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+    <title>PPSR</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="../../ppsr-src/script/jquery-3.6.1.min.js"></script>
+
+    <meta name="viewport" content="initial-scale=1">
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+      $("#loading").css("display","none");
+
+      $(".button").bind("click",function(e){
+
+
+
+        $( "#loading" ).css("display","block");
+        $( "#loading" ).css("opacity",0);
+
+          $( "#loading" ).animate({
+            opacity: 1,
+              }, 100, function() {
+                // Animation complete.
+
+                $(this).delay(2000).queue(function() {
+
+                   $(this).dequeue();
+
+                });
+
+
+          });
+
+        alert('foo');
+
+        return false;
+        e.preventDefaults();
+
+
+  });
+
+
+
+
+
+    });
+
+    </script>
+
+</head>
+<body>
+
+  <div class="wrapper">
+
+      <section class="header">
+        <img src="ppsr_logo_01.svg" />
+      </section>
+      <section class="main">
+        <div id="loading"><span class="loader-label">Processing secure payment...</span><span class="loader"></span></div>
+
+        <div class="intro">
+          <hr>
+          <h1><img src="favicon.ico" alt="PPSR logo" height="18"> PPSR Car Check <span>beta</span></h1>
+          <p>If you are buying a used car privately the $2 PPSR Car Check will tell you if the car you want to buy is recorded as free from debt, written off, stolen or recalled.</p>
+        </div>
+
+
+          <form action="payment.html" method="get">
+
+
+
+
+
+
+
+          <div class="content">
+
+
+                                <h2>Car details</h2>
+                                <p>
+                                    <span>Plate number and state:</span> <span>1ABC 321 WA</span>
+                                </p>
+                                <p>
+                                    <span>Vehicle type:</span><span> CAR/SMALL PASSENGER</span>
+                                </p>
+                                <p>
+                                    <span>Make:</span><span> HYUNDAI</span>
+                                </p>
+                                <p>
+                                    <span>Colour:</span><span> BLUE</span>
+                                </p>
+                                <p>
+                                    <span>Year:</span><span> 2020</span>
+                                </p>
+                                <p>VIN: KMHKH81CVMUXXXXXX</p>
+                                <p>
+                                  <br>
+                                Your search will be performed on the VIN above.<br></p>
+
+
+                                <br>
+
+                                <a href="#" id="search-by-vin">Search for a different car</a>
+                                <br><br>
+
+
+</div>
+<div class="content">
+
+                    <h2>Pay for your $2 search</h2>
+
+                    <p>Accepted debit and credit cards types: Mastercard, Visa and American Express. Secure payment will appear as "PPSR AFSA" on your bank statement.</p>
+
+                    <div class="payment">
+
+                      <label for="card-number">Card number
+                        <input type="text" name="card-number" id="card-number">
+                      </label>
+
+                      <label for="expiry-date">Expiry date<br>
+                        <input type="text" name="expiry-date" class="expiry-date" id="expiry-mm"> / <input type="text" class="expiry-date" name="expiry-date" id="expiry-yy">
+                      </label>
+
+                      <label for="ccv">Card security code<br>
+                        <span>  The last three digitals on back of the card</span>
+                        <input type="text" name="ccv" id="ccv"><br>
+
+
+                      </label>
+
+
+                    </div>
+
+                    <br><br>
+
+
+                    <p>By continuing you are agreeing to the <a href="#">PPSR Terms and Conditions of Use</a>, <a href="#">Third Party Conditions</a>, and <a href="#">PPSR Fees</a>.</p>
+
+
+
+        <div class="content">
+            <input type="submit" value="Proceed to payment" class="button disabled">
+        </div>
+      </form>
+
+
+      </section>
+      <section class="footer">
+
+      </section>
+  </div>
+
+
+</body>
+</html>
